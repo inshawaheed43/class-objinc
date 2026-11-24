@@ -47,7 +47,7 @@ class Car {
 
 
     // THIS IS THE CORRECT WAY OF CREATING AN OBJECT WITHIN A CLASS
-    static void Main()
+    internal static void Main()
     {
         Car myObj = new Car();
 
@@ -59,13 +59,27 @@ class Car {
 
 
 
-class Program {
-static void Main()
-    {
 
-        studentRecord obj = new studentRecord();
-        obj.studentR();
+
+
+
+class Myclass
+{
+    string color; //THESE ARE CALLED FIELDS AS VARS INSIDE A CLASS IS CALLED AS FEILD
+    int maxSpeed = 200;
+
+    //WE CAN ALSO JUST INITILIZE THESE FILEDS AND CAN EDIT THEM WHILE CREATING OBJS
+    public void fullName()
+    {
+        Console.WriteLine("whats your full name?");
+
 
     }
 
+    static void Main()
+    {
+        Myclass obj = new Myclass();
+        obj.color = "red";
+
+    }
 }
