@@ -58,5 +58,18 @@ static void Main()
      Program obj = new Program();
         obj.Insha();
 
+
+        // IF WE DON'T FOLLOW THE SEQUENCE IN PARAMETER AND ARGUMENTS THEN WE'LL 
+        // USE "NAMED ARGUMENTS" LIKE THIS 
+        Program.ShowNameAge(age:23, name:"Insha Waheed");
+
     }
+    public static void ShowNameAge(string name, int age)
+    {
+        Console.WriteLine("Your age is: " + age);
+        Console.WriteLine("Your Name is: " + name);
+
+
+    }
+
 }
